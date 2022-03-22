@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lazy Load</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 class="visually-hidden">Обучение lazy loading</h1>
+			<section class="blog">
+				<h2 class="blog__title">Какой то заголовок</h2>
+				<p class="blog__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut blanditiis dignissimos dolorum esse et ipsa magnam modi molestias odio odit optio, perferendis praesentium quisquam sint soluta tenetur voluptatem voluptates.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda cum earum enim incidunt natus odit, sequi voluptatem. Aliquam aliquid consectetur impedit incidunt laudantium molestiae nesciunt nulla provident recusandae ullam?
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi illo magnam non perspiciatis rem? Itaque, officiis, veritatis. Ab accusantium, at consequuntur error esse incidunt odit officiis quae, rerum temporibus, unde.
+				</p>
+				<p class="blog__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut blanditiis dignissimos dolorum esse et ipsa magnam modi molestias odio odit optio, perferendis praesentium quisquam sint soluta tenetur voluptatem voluptates.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque dicta distinctio earum est eum explicabo illum ipsa libero minima molestiae, perspiciatis quam quia repellat repellendus sapiente temporibus vitae! Qui!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae blanditiis commodi cum cupiditate ea eveniet facere impedit iste magni maxime, molestias nam nemo nulla pariatur quaerat rerum sapiente voluptatibus voluptatum.
+				</p>
+				<p class="blog__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut blanditiis dignissimos dolorum esse et ipsa magnam modi molestias odio odit optio, perferendis praesentium quisquam sint soluta tenetur voluptatem voluptates.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste minima mollitia qui velit voluptas! Aliquam beatae cumque itaque labore modi nulla numquam officiis quos, repellendus totam veritatis voluptate voluptatem voluptatum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae delectus dicta dolore dolorem eos error eveniet labore libero magnam minus nisi perspiciatis possimus quam ratione, repudiandae soluta tenetur veritatis.
+				</p>
+				<p class="blog__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut blanditiis dignissimos dolorum esse et ipsa magnam modi molestias odio odit optio, perferendis praesentium quisquam sint soluta tenetur voluptatem voluptates.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at atque aut commodi cum deleniti fuga, illum impedit ipsam labore maiores nam nihil placeat qui quod temporibus velit veritatis voluptate.
+				</p>
+			</section>
+			<section class="gallery">
+				<h2 class="visually-hidden">Какой то заголовок для изображении</h2>
+				<ul class="gallery__list">
+					<li class="gallery__item">
+						<img data-src="./img/img3.jpg" data-loading-src="./img/loading.gif" src="./img/1x1.png" alt="Картинка" />
+					</li>
+					<li class="gallery__item">
+						<img data-src="./img/img1.jpg" data-loading-src="./img/loading.gif" src="./img/1x1.png" alt="Картинка" />
+					</li>
+					<li class="gallery__item">
+						<img data-src="./img/img2.jpg" data-loading-src="./img/loading.gif"  src="./img/1x1.png"  alt="Картинка" />
+					</li>
+					<li class="gallery__item">
+						<img  data-src="./img/img3.jpg" data-loading-src="./img/loading.gif" src="./img/1x1.png" alt="Картинка" />
+					</li>
+					<li class="gallery__item">
+						<img data-src="./img/img4.jpg" data-loading-src="./img/loading.gif" src="./img/1x1.png" alt="Картинка" />
+					</li>
+					<li class="gallery__item">
+						<img  data-src="./img/img2.jpg" data-loading-src="./img/loading.gif" src="./img/1x1.png" alt="Картинка" />
+					</li>
+				</ul>
+			</section>
+			<section class="map">
+				<div class="map__link" data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21100.22365418332!2d22.308059938891592!3d48.618878306174004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473919ba0923b11f%3A0x88400f5d52df9321!2z0KPQttCz0L7RgNC-0LTRgdC60LjQuSDQt9Cw0LzQvtC6LCDQl9Cw0LrQsNGA0L_QsNGC0YHQutC40Lkg0LrRgNCw0LXQstC10LTRh9C10YHQutC40Lkg0LzRg9C30LXQuQ!5e0!3m2!1sru!2sua!4v1616828514253!5m2!1sru!2sua"></div>
+			</section>
+			<section class="lazy-text-loading" data-lazy-text data-lazy-loader="./img/loading.gif">
+				<p class="lazy-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut consequatur cupiditate dolorem est excepturi facilis ipsam laborum modi nulla placeat, quae, quaerat quibusdam quis quod reiciendis, similique voluptatibus. Voluptatibus.</p>
+			</section>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
